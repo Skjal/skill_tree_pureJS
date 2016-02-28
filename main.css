@@ -1,0 +1,328 @@
+/* > CONTENT < */
+/* 1. - CONTAINER - r17 */
+/* 2. - NEVIGATION - r97 */
+/* 3. - SKILL CATEGORY CONTAINERS - r136 */
+/* 4. - SKILL POSITIONS + SKILL DECORATION - r160 */
+/* 4.1. - SKILL HOVER BOX - r251 */
+/* 4.1.1 - FIRST AND LAST SKILLS DESCRIPTION - r278 */
+/* 4.1.2  - SKILLS DESCRIPTION TOP POSITION - r290 */
+/* 4.1.3. - SKILLS DESCRIPTION LEFT POSITION - r304 */
+
+body {
+  background: url("img/bg1.jpg") no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  }
+
+/* 1. CONTAINER (everything instead of skills)-------------------------------- */
+
+#container {
+  background: url("img/bg2.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 700px;
+  width: 990px;
+  margin-top: 50px;
+  margin-left: 280px;
+  box-shadow: inset 0px 0px 20px 20px rgba(0, 0 , 0 , 0.7);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.stats {
+  position: absolute;
+  top: -20px;
+  left: 220px;
+  color: #fff;
+}
+
+.pulse {
+  -webkit-animation: pulse linear 2.5s infinite;
+	animation: pulse linear 2.5s infinite;
+  position: absolute;
+  top: 65px;
+}
+
+@keyframes pulse {
+  0% {
+		opacity: 0.85;
+		color: rgba(127,127,127,0.65);
+	}
+	50% {
+		opacity: 1;
+		color: rgba(255,229,178,0.9);
+	}
+	100% {
+		opacity: 0.85;
+		color: rgba(127,127,127,0.65);
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 0.85;
+		color: rgba(127,127,127,0.65);
+	}
+	50% {
+		opacity: 1;
+		color: rgba(255,229,178,0.9);
+	}
+	100% {
+		opacity: 0.85;
+		color: rgba(127,127,127,0.65);
+	}
+}
+
+#reset {
+  background: #9589A0;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 0px 1px 2px;
+  color: gold;
+  position: absolute;
+  top: 110px;
+  z-index: 9999;
+}
+
+.skill_count {
+  padding-top: 32px;
+  padding-left: 5px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0px 1px 1px #000;
+}
+
+/* 2. NAVIGATION --------------------------------*/
+
+nav {
+    position: absolute;
+    top: 42px;
+    left: 293px;
+    width: 990px;
+}
+
+nav ul {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: -4px;
+  display: inline-block;
+  width: 330px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#str_nav {
+  background: url("img/str_nav.png") no-repeat center;
+  background-size: cover;
+  border-top-left-radius: 5px;
+}
+
+#dex_nav {
+  background: url("img/dex_nav.png") no-repeat center;
+  background-size: cover;
+}
+#m_nav {
+  background: url("img/m_nav.png") no-repeat center;
+  background-size: cover;
+  border-top-right-radius: 5px;
+}
+
+/* 3. SKILL CATEGORY CONTAINERS----------------------------------- */
+
+#strength, #agility, #magic {
+  width: 329px;
+  height: 680px;
+  position: relative;
+}
+
+#strength {
+  top: 20px;
+}
+
+#agility {
+  left: 330px;
+  top: -660px;
+  border-right: solid black 1px;
+  border-left: solid black 1px;
+}
+
+#magic {
+  top: -1340px;
+  left: 660px;
+}
+
+/* 4. SKILL POSITIONS + SKILL DECORATION ----------------------------------- */
+
+#skill1, #skill2, #skill3, #skill4, #skill5, #skill6 {
+  background: url("img/str_skills.png");
+}
+
+#skill7, #skill8, #skill9, #skill10, #skill11, #skill12 {
+  background: url("img/dex_skills.png");
+}
+
+#skill13, #skill14, #skill15, #skill16, #skill17, #skill18 {
+  background: url("img/m_skills.png");
+}
+
+.general_skills {
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+}
+
+.unlocked {
+  filter: brightness(1.0);
+  -webkit-filter: brightness(1.0);
+}
+
+#skill1, #skill2, #skill3, #skill4, #skill5, #skill6,
+#skill7, #skill8, #skill9, #skill10, #skill11, #skill12,
+#skill13, #skill14, #skill15, #skill16, #skill17, #skill18  {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+#skill1, #skill7, #skill13  {
+  background-position: 0 0;
+  left: 149px;
+  top: 75px;
+}
+
+#skill2, #skill8, #skill14 {
+  background-position: 0px -96px;
+  left: 74px;
+  top: 250px;
+}
+
+#skill3, #skill9, #skill15 {
+  background-position: 0px -160px;
+  left: 218px;
+  top: 250px;
+}
+
+#skill4, #skill10, #skill16 {
+  background-position: 0px -192px;
+  left: 74px;
+  top: 425px;
+}
+
+#skill5, #skill11, #skill17 {
+  background-position: 0px -224px;
+  left: 218px;
+  top: 425px;
+}
+
+#skill6, #skill12, #skill18 {
+  background-position: 0px -384px;
+  left: 149px;
+  top: 600px;
+}
+
+#skill10 {
+  background-position: 0px -1056px;
+}
+
+#skill11 {
+  background-position: 0px -1376px;
+}
+
+#skill12 {
+  background-position: 0px -2208px;
+}
+
+#skill15 {
+    background-position: 0px -192px;
+}
+
+#skill16 {
+    background-position: 0px -256px;
+}
+
+#skill17 {
+    background-position: 0px -608px;
+}
+/* 4.1 SKILL HOVER BOX ----------------------------------- */
+
+.description {
+  display: none;
+  width: 300px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+b {
+  color: #0066CC;
+  margin-left: 5px;
+}
+
+p {
+  color: #fff;
+  margin-left: 5px;
+}
+
+#skill1:hover + .description, #skill2:hover + .description, #skill3:hover + .description, #skill4:hover + .description, #skill5:hover + .description, #skill6:hover + .description,
+#skill7:hover + .description, #skill8:hover + .description, #skill9:hover + .description, #skill10:hover + .description, #skill11:hover + .description, #skill12:hover + .description, #skill13:hover + .description,
+#skill14:hover + .description, #skill15:hover + .description, #skill16:hover + .description, #skill17:hover + .description, #skill18:hover + .description {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+}
+
+/* 4.1.1. FIRST AND LAST SKILLS DESCRIPTION */
+
+#skill1:hover + .description, #skill7:hover + .description, #skill13:hover + .description {
+  top: 50px;
+  left: 190px;
+}
+
+#skill6:hover + .description, #skill12:hover + .description, #skill18:hover + .description {
+  top: 575px;
+  left: 190px;
+}
+
+/* 4.1.2. SKILLS DESCRIPTION TOP POSITION */
+
+#skill2:hover + .description, #skill3:hover + .description,
+#skill8:hover + .description, #skill9:hover + .description,
+#skill14:hover + .description, #skill15:hover + .description {
+  top: 225px;
+}
+
+#skill4:hover + .description, #skill5:hover + .description,
+#skill10:hover + .description, #skill11:hover + .description,
+#skill16:hover + .description, #skill17:hover + .description {
+  top: 395px;
+}
+
+/* 4.1.3. SKILLS DESCRIPTION LEFT POSITION */
+
+#skill2:hover + .description,
+#skill8:hover + .description,
+#skill14:hover + .description  {
+  left: 120px;
+}
+
+#skill3:hover + .description,
+#skill9:hover + .description,
+#skill15:hover + .description {
+  left: 265px;
+}
+
+#skill4:hover + .description,
+#skill10:hover + .description,
+#skill16:hover + .description {
+  left: 120px;
+}
+
+#skill5:hover + .description,
+#skill11:hover + .description,
+#skill17:hover + .description {
+  left: 265px;
+}

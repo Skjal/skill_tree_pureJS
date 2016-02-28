@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+  <html>
+
+    <head>
+      <title>Skill Tree | Calculator</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <main id="container">
+        <nav>
+          <ul>
+            <li id="str_nav">STRENGTH</li>
+            <li id="dex_nav">AGILITY</li>
+            <li id="m_nav">MAGIC</li>
+          </ul>
+        </nav>
+        <p class="pulse"><i> Skill points left: <span id="sp_counter">30</span></i></p
+        ><button type="button" name="reset" id="reset">Reset Skills</button
+        ><div id="strength"
+          ><div class="stats">0</div
+          ><div
+            ><div id="skill1" class="skill" data-skill="madness" data-skill-level="1"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Madness</b><p>Unleash the dogs of war and cry: "Havoc!"...</p></div
+          ></div
+          ><div class="2_tier"
+            ><div id="skill2" class="general_skills skill" data-skill="turboSwings" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Turbo Swings</b><p>Your attacks becomes extremely fast.</p></div
+            ><div id="skill3" class="general_skills skill" data-skill="volcanoSlash" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Volcano Slash</b><p>Your attack becomes volcanic erruption.</p></div
+          ></div
+          ><div class="3_tier"
+            ><div id="skill4" class="general_skills skill" data-skill="swiftness" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Swiftness</b><p>Run to your foe with inhuman speed and unleash hell!</p></div
+            ><div id="skill5" class="general_skills skill" data-skill="throatCutting" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Throat Cutting</b><p>Every predator attacks neck first.</p></div
+          ></div
+          ><div class="4_tier"
+            ><div id="skill6" class="general_skills skill" data-skill="upperCut" data-skill-level="4"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Upper Cut</b><p>Who can survive with sword in head?</p></div
+          ></div
+        ></div
+        ><div id="agility"
+          ><div class="stats">0</div
+          ><div
+            ><div id="skill7" class="skill" data-skill="thousandDaggers" data-skill-level="1"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Thousand Daggers</b><p>Stabby, stabby mdfk!</p></div
+          ></div
+          ><div class="2_tier"
+            ><div id="skill8" class="general_skills skill" data-skill="parade" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Parade</b><p>Circle around and slash everything near you.</p></div
+            ><div id="skill9" class="general_skills skill" data-skill="backstab" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Backstab</b><p>Stab your foe from behind.</p></div
+          ></div
+          ><div class="3_tier"
+            ><div id="skill10" class="general_skills skill" data-skill="magicStab" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Magic stab</b><p>Stab foe with magic power.</p></div
+            ><div id="skill11" class="general_skills skill" data-skill="meditation" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Meditation</b><p>Meditate before combat and gain bonus to Attack Power and Total Speed.</p></div
+          ></div
+          ><div class="4_tier"
+            ><div id="skill12" class="general_skills skill" data-skill="death" data-skill-level="4"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Death</b><p>No one escapes. Instantly kill everything around.</p></div
+          ></div
+        ></div
+        ><div id="magic"
+          ><div class="stats">0</div
+          ><div
+            ><div id="skill13" class="skill" data-skill="supersonicElectronic" data-skill-level="1"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Supersonic Electronic</b><p>5..4..3..1... OFF BLAST!!!</p></div
+          ></div
+          ><div class="2_tier"
+            ><div id="skill14" class="general_skills skill" data-skill="electricVengeance" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Electric Vengeance</b><p>Tear foes apart with powerfull blasts.</p></div
+            ><div id="skill15" class="general_skills skill" data-skill="cursedLightning" data-skill-level="2"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Cursed Lighting</b><p>Lasery z piekla!</p></div
+          ></div
+          ><div class="3_tier"
+            ><div id="skill16" class="general_skills skill" data-skill="lightningBolt" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Lighting Bolt</b><p>Regular lighting strike.</p></div
+            ><div id="skill17" class="general_skills skill" data-skill="supernova" data-skill-level="3"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Supernova</b><p>Your body erupts with immersive power.</p></div
+          ></div
+          ><div class="4_tier"
+            ><div id="skill18" class="general_skills skill" data-skill="star" data-skill-level="4"><p class="skill_count"><span>0</span>/3</p></div
+            ><div class="description"><b>Star</b><p>Justin Bieber...</p></div
+          ></div
+        ></div>
+      </main>
+      <script src="javascript/scripts.js"></script>
+    </body>
+  </html>
